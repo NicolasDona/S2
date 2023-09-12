@@ -1,3 +1,5 @@
+
+
 .portrait {
     background-image: url("../img/coworking-portrait.jpg");
     height: 100vh;
@@ -25,107 +27,63 @@
 
     .footer-list li {
         flex: 1; /* Chaque item prend une part égale de l'espace disponible */
-        text-align: left; /* Aligner le texte à gauche */
+        text-align: center;
         margin: 0; /* Supprimer les marges pour uniformiser l'espacement */
     }
 }
 
-.container {
+.container1 {
     display: flex;
     flex-wrap: wrap;
-    color: rgb(10, 10, 9);
-    font-weight: bold;
+    justify-content: space-evenly;
+    background-color: darkcyan;
 }
-.cont1-title  {
-    font-size: 20px;
+.cont1-title {
+    font-family: 'Pacifico', cursive;
+
 }
 .cont1-article {
-    font-size: 20px;
+    align-self: center;
+
 }
 
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: darkorchid;
+    
+}
 .cont2-title {
-    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+
 }
 .cont2-article {
-    font-size: 20px;
+align-self: center;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: darkcyan;
+    
+}
+.cont3-title {
+    font-family: 'Pacifico', cursive;
+}
+
+.cont3-form {
+    padding: 17px;
+}
+
+.form_group {
+    
 }
 
 .footer-list {
     list-style-type: none;
     padding: 0;
     text-align: center; /* Centrer les items horizontalement */
+    background-color: darkcyan;
 }
-
-/* Styles formulaire de contact */
-.form-cont_master1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.form-cont_title {
-    color: rgb(10, 10, 9);
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-
-}
-
-.form-cont_form {
-    color: rgb(10, 10, 9);
-    display: flex;
-    flex-direction: column;
-    width: 70vh;
-}
-.form {
-    width: 100%;
-    flex-direction: row;
-
-}
-.form-group {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; /* Centrez les éléments verticalement */
-}
-
-.form-cont_mail {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 45px 0;
-
-}
-
-label {
-    flex: 3;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 50px; /* Espace entre le label et le champ de saisie */
-}
-
-input {
-    font-size: 20px;
-}
-textarea {
-    font-size: 20px;
-}
-
-/* Styles CSS pour cibler le bouton */
-.form-button input[type="submit"] {
-    color: rgb(10, 10, 9);
-    background-color: blueviolet;
-    border: none; /* Supprimez la bordure du bouton */
-    padding: 10px 50px; /* Ajoutez de la marge intérieure pour le bouton */
-    border-radius: 20px;
-    cursor: pointer; /* Changez le curseur au survol du bouton */
-    font-size: 20px; /* Taille de la police du texte du bouton */
-    font-weight: bold;
-
-}
-
-/* Style pour le survol du bouton */
-.form-button input[type="submit"]:hover {
-    background-color: #f43c80;
-}
-
