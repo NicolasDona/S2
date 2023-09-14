@@ -4,71 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
-    <div class="container-fluid">
+<!-- Header -->
+<header>
+    <div class="container-fluid p-0">
         <div class="col-12" >
             <div class="bg-light text-center h1">Ma première page Bootstrap 5</div>
             <div class="text-center">En redimensionnant la page dans le navigateur, on voit le responsive en action!</div>
         </div>
     </div>
 
-    <!-- Nav Bar -->
-    <div class="container-fluid row bg-dark">
-        <div class="row text-light">
-            <div class="navbar col-4">Link 1</div>
-            <div class="navbar col-4">Link 2</div>
-            <div class="navbar col-4">Link 3</div>
+    <!-- Nav Bar  voir bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-bookmark-check-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-light">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Lien 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lien 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lien 3</a>
+                </li>
+            </ul>
         </div>
     </div>
-
+    </nav>
+</header>
 <!-- main -->
-    <div class="container-fluid boder-1">
+<main class="container-fluid">
+
         <!-- partie gauche centrale -->
-        <div class="col-3 border-1 bg-info">
-            <div class="">
-                <div>bloc head</div>
-                <div><img src="portrait.jpg" alt="ma photo"></div>
-                <div>bloc liens</div>
+        
+        <div class="row">
+            <div class="col-12 col-md-4" >
+                <div class="col-12 text-center">
+                    <h2>A propos de moi</h2>
+                    <h6>Ma photo</h6>
+                </div>
+                <div class="col-12 text-center ">
+                    <img src="./assets/img/portrait.jpg" alt="ma photo" class="img-fluid">
+                </div>
+                
+                <div class="container">
+                    <div class="text-center"><h2>Quelques liens</h2></div>
+                    <div class="container row">
+                        <div class="col-4"></div>
+                        <div class="col-8"><h5><img class="my-perso-ico" src="./assets/img/fb.png" alt="facebook">Facebook</h5></div>
+                        <div class="col-4"></div>
+                        <div class="col-8"><h5><img class="my-perso-ico" src="./assets/img/insta.png" alt="instagram">Instagram</h5></div>
+                        <div class="col-4"></div>
+                        <div class="col-8"><h5><img class="my-perso-ico" src="./assets/img/twitter.png" alt="twitter">Twitter</h5></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+
     <!-- partie droite central -->
-    <div class="container-fluid row justify-content-center text-center">
-        <div class="card border-1 col-12">
+    <div class="col-md-8 col-12 text-center">
+        <div class="article col-12">
             <div class="card-body">
                 <h2 class="card-title">Grand Titre h2 </h2>
                 <h5 class="card-text">un sous-titre taille h5, 18 sept. 2020</h5>
-                <img src="" alt="landscape">
+                <img class="img-fluid perso-image" src="./assets/img/landscape1.jpg" alt="landscape">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, voluptatem. Quis totam omnis tenetur possimus accusantium enim dignissimos sit et, quas magni quidem, maiores hic minus est laboriosam quae illum?</p>
             </div>
         </div>
-        <div class="card border-1 col-12">
+
+        <div class="article col-12">
             <div class="card-body">
                 <h2 class="card-title">Grand Titre h2 </h2>
                 <h5 class="card-text">un sous-titre taille h5, 18 sept. 2020</h5>
-                <img src="" alt="landscape">
+                <img class="img-fluid perso-image" src="./assets/img/landscape2.jpg" alt="landscape">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime explicabo nostrum nam quasi deleniti cumque commodi, possimus quisquam quod illum accusantium quidem doloremque. Accusantium exercitationem alias inventore animi quia dolorum?</p>
             </div>
         </div>
-        <div class="card border-1 col-12">
+
+        <div class="article  col-12">
             <div class="card-body">
                 <h2 class="card-title">Grand Titre h2 </h2>
                 <h5 class="card-text">un sous-titre taille h5, 18 sept. 2020</h5>
-                <img src="" alt="landscape">
+                <img class="img-fluid perso-image m-0" src="./assets/img/landscape3.jpg" alt="landscape">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non totam ullam sint tempore dolorem debitis iusto ad id porro. Assumenda nobis in iste, unde delectus blanditiis fugit quisquam dignissimos.</p>
             </div>
         </div>
     </div>
 
 
-
+</main>
     <!-- footer -->
-
-
+    <footer>
+    <div class="container-fluid bg-dark">
+        <div class="row text-light">
+            <div class="col-12 text-center">incription à notre newsletter</div>
+            <div class="col-12 text-center"><input type="mail" placeholder="email@domain.com"></div>
+        </div>
+        <div class="row text-light">
+            <div class="col-12 col-sm-6 text-center"><a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/quelles-sont-les-mentions-legales-pour-un-site" target="_blank" alt="Mentions legales">Mentions Légales</a></div>
+            <div class="col-12 col-sm-6 text-center"><a href="http://www.lamanu.fr/" target="_blank" alt="Le site de la manu">Site by la manu</a></div>
+        </div>
+    </div>
+</footer>
 <script src="./assets/framework/bootstrap.min.js"></script>
 </body>
 </html>
